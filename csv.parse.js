@@ -1,5 +1,5 @@
-module.exports = {
-  convertCsv: data => {
+
+const convertCsv = (data) => {
     const csv = data.split(/\n/);
 
     const rows = csv.map(_ => _.split(/,/));
@@ -21,5 +21,7 @@ module.exports = {
     }
 
     return vals;
-  }
 };
+
+
+module.exports = { convertCsv };
